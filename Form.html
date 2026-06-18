@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table{
+            margin: auto;
+            background-color:bisque;
+        }
+        tr{
+            color:maroon;
+        }
+
+    </style>
+</head>
+
+<body style="background-color:cornflowerblue;">
+    <h1 style="text-align: center; text-decoration: underline;"> Registration Form </h1>
+    <table border="5" width="50%" cellspacing="20" cellpadding="10">
+        
+            <tr>
+                <th> <label for="fname"> First Name</label> </th>
+                <td> <input type="text" id="fname" placeholder="First Name here"> </td>
+            </tr>
+            <tr>
+                <th> <label for="lname">Last Name</label> </th>
+                <td> <input type="text" id="lname" placeholder="Last Name here"> </td>
+            </tr>
+            <tr>
+                <th> <label for="e"> Email id</label> </th>
+                <td> <input type="email" id="e"> </td>
+            </tr>
+            <tr>
+                <th> <label for=""> Password</label></th>
+                <td> <input type="password"></td>
+            </tr>
+            <tr>
+                <th> <label for="pname"> Number </label></th>
+                <td> <input type="text" id="pname" value="+91 "></td>
+            </tr>
+            <tr>
+                <th> <label for=""> Gender</label></th>
+                <td>
+                    <label for=""> Male</label>
+                    <input type="radio" value="male"name="g1">
+                    <label for="">female</label>
+                    <input type="radio" value="Female"name="g1">
+                </td>
+            </tr>
+            <tr>
+                <th> <label for=""> Highest Qualification</label></th>
+                <td>
+                    <label for=""> 10th </label>
+                    <input type="radio" name="q1">
+                    <label for=""> 12th </label>
+                    <input type="radio" name="q1">
+                    <label for=""> BCA </label>
+                    <input type="radio" name="q1">
+                </td>
+            </tr>
+            <tr>
+                <th> <label for=""> Skills </label></th>
+                <td>
+                    <label for=""> HTML </label>
+                    <input type="checkbox" name="s1">
+                    <label for=""> CSS </label>
+                    <input type="checkbox" name="s1">
+                    <label for=""> JS </label>
+                    <input type="checkbox" name="s1">
+                </td>
+            </tr>
+            <tr>
+                <th> <label for=""> City </label></th>
+                <td>
+                    <select name=""id="">
+                        <option value=""> Select City </option>
+                        <option value=""> Meerut </option>
+                        <option value=""> Vrindavan </option>
+                        <option value=""> Noida </option>
+                        <option value=""> Gurgaon </option>
+                        <option value=""> Rishikesh </option>
+                        <option value=""> Haridwar </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th> <label for=""> DOB </label></th>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <th> <label for=""> Select Range </label></th>
+                <td>
+                    <input type="range">
+                </td>
+            </tr>
+            <tr>
+                <th> <label for=""> Submit File </label></th>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+               <td> <input type="reset"></td> 
+               <td> <input type="submit"></td>
+            </tr>
+    </table>
+</body>
+
+</html>
