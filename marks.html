@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/CSS/marks.css">
+</head>
+<body>
+    <h1> RESULT </h1>
+    <script>
+        let sname, h, e, s, m, c, total, avg, result;
+        sname=prompt( 'Enter your name')
+        h= parseInt(prompt( 'Enter hindi marks' ))
+        e= parseInt(prompt( 'Enter english marks' ))
+        s= parseInt(prompt( 'Enter science marks' ))
+        m= parseInt(prompt( 'Enter maths marks' ))
+        c= parseInt(prompt( 'Enter computer marks' ))
+        total= h+e+s+m+c;
+        avg=total/5;
+        result=(avg>=60)? "PASS" : "FAIL";
+        document.write(`<table border="1" width="100%">
+      <thead>
+            <tr>
+                <th> Name </th>
+                <th> Hindi </th>
+                <th> English </th>
+                <th> Science </th>
+                <th> Maths </th>
+                <th> Computer </th>
+                <th> Total </th>
+                <th> Avg </th>
+                <th> Result </th>
+            </tr>
+      </thead>
+        <tbody>
+            <tr>
+                <td> ${sname} </td>
+                <td> ${h} </td>
+                <td> ${e} </td>
+                <td> ${s} </td>
+                <td> ${m} </td>
+                <td> ${c} </td>
+                <td> ${total} </td>
+                <td> ${avg} </td>
+                <td style="color: ${avg>=60?'green' : 'red'}">${result}</td>
+            </tr>
+        </tbody>
+    </table>`)
+
+            
+</script>
+</body>
+</html>
