@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+}
+    nav{
+    background-color: #023020 ;
+    border:2px solid black;
+    display:flex;
+    /*justify-content:space-between;
+    justify-content: center;
+    padding: 15px;*/
+}
+.left-nav{
+    flex: 40%;
+    font-size: 27px;
+    font-weight: bold;
+    color: darkkhaki;
+    margin-left: 1.5%;
+}
+.right-nav{
+    flex: 60%;
+    text-align: right;/* why not use justify content end*/
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.right-nav ul{
+    list-style-type: none;
+}
+.right-nav ul li{
+      display: inline-block;
+      padding: 10px;
+}
+.right-nav ul li a{
+    text-decoration: none;
+    color:darkkhaki;
+    font-weight: bold;
+    font-size: 20px;
+}
+.right-nav ul li:hover {
+    background-color:white;
+}
+.right-nav ul li:hover a{
+    color:crimson;
+}
+.banner{
+    flex-direction: column;
+    background-color:#023020;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:floralwhite;
+}
+.banner h1{
+    font-size: 60px;
+    margin-right: 400px;
+}
+.banner p{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.banner a{
+    margin-top: 20px;
+    size: 30px;
+    display: inline-block;
+    padding: 25px;
+    background-color:darkgrey;
+    border-radius: 40%;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.banner a:hover{
+    background-color: gold;
+}
+.about{
+    background-color: whitesmoke;
+    height: 400px;
+    font-size: 20px;
+    display: flex;
+    gap: 50px;
+}
+.about h2{
+    text-decoration: underline;
+    padding: 10px;
+}
+.about p{
+    margin-top: 50px;
+    text-decoration: none;
+    text-align: justify;
+    margin-right: 100px;
+    font-size: 20px;
+}
+.skills{
+    background-color: #023020;
+    min-height: 350px;
+    padding: 30px;
+}
+
+.skills h2{
+    text-decoration: underline;
+    text-align: center;
+    color: gold;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill-name{
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+
+    background-color: whitesmoke;
+    color: black;
+
+    border-radius: 50px;      
+    border: 2px solid black;
+   
+}
+.skill-name:hover{
+    transform: scale(1.1);
+}
+.projects{
+    background-color: whitesmoke;
+    min-height: 500px;
+    padding: 30px;
+}
+
+.projects h2{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    color: #023020;
+    margin-bottom: 50px;
+}
+
+.project-list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project-box{
+    width: 280px;
+    height: 280px;
+    background-color: #023020;
+    color: white;
+    border: 2px solid darkkhaki;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover{
+    transform: scale(1.05);
+}
+
+.project-box h3{
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.project-box p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.contact{
+    background-color: #023020;
+    height: 125px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact h2{
+    color: gold;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contact p{
+    font-size: 20px;
+    margin: 15px;
+}
